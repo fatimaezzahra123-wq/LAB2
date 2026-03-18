@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    android:padding="0dp">
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcul des impôts locaux"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:background="#EBEBEB"/>
+
+    <!-- Nom -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"/>
+    <EditText
+        android:id="@+id/input_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#D8D8D8"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Adresse -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adresse"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"/>
+    <EditText
+        android:id="@+id/input_adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:background="#D8D8D8"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Surface -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Surface"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"/>
+    <EditText
+        android:id="@+id/input_surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="#D8D8D8"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Nombre de pièces -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de pièces"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="2dp"/>
+    <EditText
+        android:id="@+id/input_pieces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="#D8D8D8"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- CheckBox + Bouton -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="20dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_piscine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Piscine"
+            android:textSize="15sp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/button_calcul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcul"
+            android:textSize="14sp"
+            android:background="#C8C8C8"
+            android:textColor="#000000"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+    </LinearLayout>
+
+    <!-- Résultats -->
+    <TextView
+        android:id="@+id/result_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="2dp"/>
+
+    <TextView
+        android:id="@+id/result_supp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="2dp"/>
+
+    <TextView
+        android:id="@+id/result_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:paddingLeft="16dp"/>
+
+</LinearLayout>
